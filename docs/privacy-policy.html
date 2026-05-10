@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Yumegami</title>
+  <style>
+    :root {
+      --bg: #08000E;
+      --surface: #130020;
+      --border: #2a0045;
+      --pink: #FF2D9B;
+      --purple: #BB6BFF;
+      --text: #EEE8F4;
+      --muted: #AA7ACC;
+      --heading: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* gradient top bar */
+    .topbar {
+      height: 4px;
+      background: linear-gradient(90deg, var(--pink), var(--purple));
+    }
+
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+    }
+
+    /* header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      flex-shrink: 0;
+      box-shadow: 0 0 24px rgba(255,45,155,0.4);
+    }
+
+    .header-text h1 {
+      font-size: 22px;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--pink), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 0.5px;
+    }
+
+    .header-text p {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* intro card */
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--pink);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* sections */
+    .section {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      font-size: 11px;
+      font-weight: 800;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .section p, .section ul {
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .section ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .section ul li {
+      padding: 4px 0 4px 16px;
+      position: relative;
+    }
+
+    .section ul li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: var(--pink);
+      font-size: 9px;
+      top: 7px;
+    }
+
+    a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    /* badge */
+    .badge {
+      display: inline-block;
+      background: rgba(255,45,155,0.12);
+      border: 1px solid rgba(255,45,155,0.3);
+      color: var(--pink);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    /* footer */
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    footer span {
+      background: linear-gradient(90deg, var(--pink), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <div class="container">
+
+    <div class="header">
+      <div class="logo">🌸</div>
+      <div class="header-text">
+        <h1>Yumegami</h1>
+        <p>Privacy Policy &nbsp;·&nbsp; Last updated: May 10, 2025</p>
+      </div>
+    </div>
+
+    <div class="intro">
+      Your privacy matters to us. Yumegami is designed to respect your data —
+      we collect as little as possible and keep everything transparent.
+    </div>
+
+    <div class="section">
+      <span class="badge">No account required</span>
+      <h2><span class="num">1</span> Information We Collect</h2>
+      <p>
+        Yumegami does <strong>not</strong> collect, store, or transmit any personal information.
+        We do not require account registration. No analytics tracking or personally
+        identifiable information is ever sent to our servers.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">2</span> Local Storage</h2>
+      <p>
+        The app stores your favorite wallpapers locally on your device using
+        Android Shared Preferences. This data <strong>never leaves your device</strong>
+        and is automatically removed when you uninstall the app.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">3</span> Permissions Used</h2>
+      <ul>
+        <li><strong>Internet</strong> — required to load wallpaper images from our public CDN.</li>
+        <li><strong>Network State</strong> — used to detect offline status and show an appropriate message.</li>
+        <li><strong>Storage / Photos</strong> — accessed only when you choose to save a wallpaper to your gallery.</li>
+        <li><strong>Set Wallpaper</strong> — used only when you tap "Set as Wallpaper".</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">4</span> Third-Party Services</h2>
+      <p>
+        Yumegami displays ads served by <strong>Google AdMob</strong>. AdMob may collect
+        device identifiers and ad-interaction data according to Google's own privacy policy.
+        You can review it here:
+        <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>
+      </p>
+      <br />
+      <p>
+        Wallpaper images are delivered from <strong>GitHub</strong> via the
+        <strong>jsDelivr CDN</strong>. No personal data is shared with these providers
+        beyond what any standard web request sends (i.e., your IP address).
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">5</span> Children's Privacy</h2>
+      <p>
+        Yumegami is not directed at children under 13. We do not knowingly collect
+        personal data from anyone, including minors.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">6</span> Changes to This Policy</h2>
+      <p>
+        We may update this policy from time to time. Any significant changes will be
+        reflected in the "Last updated" date at the top of this page.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">7</span> Contact</h2>
+      <p>
+        Have questions about this policy?<br />
+        Reach out at: <a href="mailto:zalifxstudio@gmail.com">zalifxstudio@gmail.com</a>
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2025 <span>Yumegami</span> by ZalifxStudio. All rights reserved.
+    </footer>
+
+  </div>
+</body>
+</html>
